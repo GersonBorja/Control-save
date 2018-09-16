@@ -21,6 +21,7 @@
 <div class="box" id="secundario">Selecciona una imagen</div>
 <input type="text" name="nombre" placeholder="Nombre del producto" autocomplete="off" class="box">
 <input type="text" name="peso" placeholder="Unidad de medida" autocomplete="off" class="box">
+<input type="text" name="barcode" placeholder="Código de barras (opcional)" class="box">
 <input type="hidden" name="user_id" value="1">
 <input type="submit" name="btn" class="btn" value="Agregar producto">
 </form>
@@ -28,22 +29,6 @@
 <h4>Productos agregados recientemente</h4>
 <?php
   include("metodos/productos_recientes.php");
-?>
-	</div>
-</body>
-</html>;
-?>
-	</div>
-</body>
-</html>;
-?>
-	</div>
-</body>
-</html>;
-?>
-	</div>
-</body>
-</html>;
 ?>
 	</div>
 </body>
