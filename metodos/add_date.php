@@ -5,6 +5,7 @@ include("clean_string.php");
 $nombre = cadena($_POST["nombre"]);
 $peso = strtolower(str_replace(' ', '', cadena($_POST["peso"])));
 $user_id = cadena($_POST["user_id"]);
+$barcode = cadena($_POST["barcode"]);
 $nombre_arch = $_FILES["img"]["name"];
 $tipo_arch = $_FILES["img"]["type"];
 $size_arch = $_FILES["img"]["size"];
@@ -50,9 +51,9 @@ if(empty($nombre) && empty($peso)){
 									if($dcmove){
 									$imagen_producto = $nombre_arch;
 									}
-									$envio = mysqli_query($con, "INSERT INTO productos (imagen, nombre, gramaje, usuario) VALUES ('$imagen_producto', '$nombre', '$peso', '$user_id')");
+									$envio = mysqli_query($con, "INSERT INTO productos (imagen, nombre, codigo, gramaje, usuario) VALUES ('$imagen_producto', '$nombre', '$barcode', '$peso', '$user_id')");
 									if($envio){
-										echo "Producto añadido exitosamente";
+										echo "Recordatorio guardado";
 										}else{
 											echo "Error al guardar";
 											}

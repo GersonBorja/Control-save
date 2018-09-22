@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST["edit"])){
+	echo $_FILES["img"]["name"];
 include("conexion.php");
 $uid = $_GET["id"];
 $nombre = $_POST["nombreP"];

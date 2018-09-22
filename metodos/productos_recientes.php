@@ -1,7 +1,7 @@
 <?php
 
 include("conexion.php");
-$consulta = mysqli_query($con, "SELECT id, nombre FROM productos ORDER BY id ASC");
+$consulta = mysqli_query($con, "SELECT id, nombre FROM productos ORDER BY id DESC");
 
 while($producto = mysqli_fetch_array($consulta)){
 echo '

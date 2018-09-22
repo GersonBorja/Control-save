@@ -2,7 +2,7 @@
 include("conexion.php");
 
 $dia = date("d");
-$mes = date("m");
+$mes = date("n");
 $year = date("y");
 $hour = date("h:i");
 echo $hour . "<br>";

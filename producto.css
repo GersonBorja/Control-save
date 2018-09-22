@@ -1,47 +1,173 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Fira Sans', sans-serif;
+     text-decoration: none;
+}
+ header {
+     padding: 1.5em;
+     background: #ffa726;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+}
+ ::placeholder {
+     color: #8a8a8a;
+}
+ .box {
+     width: 100%;
+     display: block;
+     background: transparent;
+     color: #fff;
+     border-bottom: 1px solid #e9e9e9;
+     border-left: 0;
+     border-right: 0;
+     border-top: 0;
+     outline: 0;
+     padding: 1em 1em 1em 0.5em;
+     margin-bottom: 8px;
+     color: #8a8a8a;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+ .btn {
+     padding: 10px 15px;
+     background: #039be5;
+     border: none;
+     outline: 0;
+     color: #fff;
+     display: inline-block;
+     margin-top: 5px;
+     border-radius: 2px;
+}
+ .imagen {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-around;
+     align-items: center;
+}
+ .imagen img {
+     width: 100%;
+     max-width: 100%;
+}
+ .imagen h2, h2 {
+     font-size: 17px;
+     color: #333;
+     font-weight: 430;
+     display: inline-block;
+}
+ .hidden {
+     display: none;
+}
+ .modal-fade, .modal-fade-edit, .modal-image {
+     display: none;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: rgba(0,0,0,.5);
+     z-index: 3;
+}
+ .modal {
+     background: #fff;
+     width: 80%;
+     max-width: 400px;
+     padding: 1.5rem;
+     height: 325;
+     display: flex;
+     align-items: center;
+     display: block;
+}
+ .modal form {
+     width: 100%;
+}
+ .modal-title {
+     display: flex;
+     justify-content: space-between;
+     align-items: baseline;
+}
+ .modal-open {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     position: fixed;
+     right: 20px;
+     bottom: 30px;
+     z-index: 2;
+     width: 50px;
+     height: 50px;
+     background: #ffa726;
+     color: #fff;
+}
+ .modal-close {
+     cursor: pointer;
+}
+ .nav a {
+     padding: 0 7px;
+     color: #fff;
+}
+ .modal-image h2 {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 0 15px 0;
+}
+ .imgTitle {
+     overflow: hidden;
+     width: 85%;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+}
+ .closeMin {
+     color: #333;
+}
+ .fadeIn {
+     animation: fadeIn linear .4s 1;
+}
+ .fadeOut {
+     animation: fadeOut linear .4s 1;
+}
+ @keyframes fadeIn{
+     from{
+         opacity: 0;
+    }
+     to{
+         opacity: 1;
+    }
+}
+ @keyframes fadeOut{
+     from{
+         opacity: 0.5;
+    }
+     to{
+         opacity: 0;
+    }
+}
+.listafechas {
+	padding: 0 1.5rem;
 	}
-	
-header {
-  padding: 1.5em;
-  background: #ffa726;
-}
-.logotipo {
-  color: #fff;
-  font-size: 17px;
-  font-weight: 400;
-}
-form {
-  padding: 1.3em;
-}
-::placeholder {
-  color: #8a8a8a;
-}
-.box {
-  width: 100%;
-  display: block;
-  background: transparent;
-  color: #fff;
-  border-bottom: 1px solid #e9e9e9;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  outline: 0;
-  padding: 1em 1em 1em 0.5em;
-  margin-bottom: 8px;
-  color: #8a8a8a;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.btn {
-	  padding: 7px;
-	  background: #039be5;
-	  border: none;
-	  outline: 0;
-	  color: #fff;
-	  display: inline-block;
-	  margin-top: 5px;
+.fechas {
+	display: flex;
+	justify-content: space-between;
 	}
+	.fechasall {
+	padding: .8rem 0;
+	border-bottom: 1px solid #eee;
+	}
+	.programado {
+		color: #7a7a7a;
+		font-size: 14px;
+		padding-top: 8px;
+		display: block;
+		}
+		.nombre_producto {
+			font-size: 1.2rem;
+			font-weight: bold;
+			padding: 1rem 1.5rem;
+			}
