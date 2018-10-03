@@ -30,10 +30,10 @@ if(empty($nombre) && empty($peso)){
 					$imagen_producto = "sin_imagen.jpg";
 					}
 			if($size_arch > 1000000){
-				echo "La imagen excede el tamaño 1MB";
+				echo "La imagen excede el tamaï¿½o 1MB";
 				}
 				if(strlen($nombre) <= 9){
-					echo "Utiliza un nombre de producto mas específico";
+					echo "Utiliza un nombre de producto mas especï¿½fico";
 					}
 					if(strlen($nombre) > 200){
 						echo "Utiliza un nombre de producto mas corto";
